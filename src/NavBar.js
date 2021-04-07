@@ -4,10 +4,10 @@ import styled from 'styled-components'
 const NavBar = () => {
     return (
         <NavContainer>
-            <NavTab>Home</NavTab>
-            <NavTab>Projects</NavTab>
-            <NavTab>Blog</NavTab>
-            <NavTab>Contact</NavTab>
+            <NavTab>home</NavTab>
+            <NavTab>projects</NavTab>
+            <NavTab>blog</NavTab>
+            <NavTab>contact</NavTab>
         </NavContainer>
     )
 }
@@ -19,10 +19,13 @@ const NavContainer = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border: solid red;
     height: 10vh;
+    background-color: whitesmoke;
+    border-bottom: solid white;
 `
 
 const NavTab = styled.span`
-
+    font-size: 18pt;
+    font-weight: bold;
+    font-family: Optima, sans-serif;
 `

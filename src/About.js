@@ -5,7 +5,7 @@ const About = () => {
 
     return (
         <AboutContainer>
-            <Title>Kevin Park</Title>
+            <h1>Kevin Park</h1>
             Full-Stack Web-Developer | Former Event Producer | Tennis Instructor 
         </AboutContainer>
     )
@@ -18,11 +18,12 @@ const AboutContainer = styled.div`
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px;
-    justify-content: flex-start;
+    justify-content: center;
     font-weight: bold;
+    text-align: center;
+    height: 100%;
+    width: 40%;
+    font-family: Optima, sans-serif;
+    background-color: white;
 `
 
-const Title = styled.h1`
-    font-family: Courier New;
-`

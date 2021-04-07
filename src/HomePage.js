@@ -16,9 +16,7 @@ const HomePage = () => {
             <SideImage>
                 {renderImages()}
             </SideImage>
-            <IntroContainer>
-                <About />
-            </IntroContainer> 
+            <About />
         </HomeContainer>
     )
 }
@@ -33,15 +31,6 @@ const HomeContainer = styled.div`
     height: 90vh;
 `
 
-const IntroContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 90vh;
-    width: 40%;
-`
 
 const SideImage = styled.div`
     display: flex;
