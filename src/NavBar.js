@@ -8,7 +8,7 @@ const NavBar = () => {
         <NavContainer>
             <NavTab to='/'>home</NavTab>
             <NavTab to='/projects'>projects</NavTab>
-            <BlogTab href='https://kevinpark-61806.medium.com/'>blog</BlogTab>
+            <NavTab to='/blog'>blog</NavTab>
             <NavTab to='/contact'>contact</NavTab>
         </NavContainer>
     )
