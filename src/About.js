@@ -6,7 +6,9 @@ const About = () => {
     return (
         <AboutContainer>
             <h1>Kevin Park</h1>
-            Full-Stack Web-Developer | Former Event Producer | Tennis Instructor 
+            <Description>
+                Full-Stack Web-Developer | Former Event Producer | Tennis Instructor 
+            </Description>
         </AboutContainer>
     )
 }
@@ -20,10 +22,16 @@ const AboutContainer = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     font-weight: bold;
-    text-align: center;
     height: 100%;
     width: 40%;
     font-family: Optima, sans-serif;
     background-color: white;
+`
+
+const Description = styled.div`
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 2px;
 `
 
