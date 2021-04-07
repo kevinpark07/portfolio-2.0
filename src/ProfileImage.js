@@ -21,10 +21,11 @@ const ImageContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid gold;
 `
 
 const Image = styled.img`
-    width: 500px;
-    height: 500px;
+    width: 40vh;
+    height: 42.5vh;
+    border: solid none;
+    border-radius: 50%;
 `
