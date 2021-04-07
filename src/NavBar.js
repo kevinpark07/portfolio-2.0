@@ -1,13 +1,15 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 const NavBar = () => {
+
     return (
         <NavContainer>
-            <NavTab>home</NavTab>
-            <NavTab>projects</NavTab>
-            <NavTab>blog</NavTab>
-            <NavTab>contact</NavTab>
+            <NavTab to='/'>home</NavTab>
+            <NavTab to='/projects'>projects</NavTab>
+            <BlogTab href='https://kevinpark-61806.medium.com/'>blog</BlogTab>
+            <NavTab to='/contact'>contact</NavTab>
         </NavContainer>
     )
 }
@@ -24,8 +26,18 @@ const NavContainer = styled.div`
     border-bottom: solid white;
 `
 
-const NavTab = styled.span`
+const NavTab = styled(Link)`
     font-size: 18pt;
     font-weight: bold;
     font-family: Optima, sans-serif;
+    color: black;
+    text-decoration: none;
+`
+
+const BlogTab = styled.a`
+    font-size: 18pt;
+    font-weight: bold;
+    font-family: Optima, sans-serif;
+    color: black;
+    text-decoration: none;
 `

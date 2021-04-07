@@ -1,12 +1,19 @@
 import NavBar from './NavBar';
 import HomePage from './HomePage';
+import ProjectsPage from './ProjectsPage';
+import ContactPage from './ContactPage';
+import { Route, Switch} from 'react-router-dom';
 import styled from 'styled-components';
 
 function App() {
   return (
     <AppDiv>
       <NavBar />
-      <HomePage />
+      <Switch>
+        <Route path='/contact' render={ () => <ContactPage/>} />
+        <Route path='/projects' render={ () => <ProjectsPage/>} />
+        <Route path='/' render={ () => <HomePage/>} />
+      </Switch>
     </AppDiv>
   )
 }
